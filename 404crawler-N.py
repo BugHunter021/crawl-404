@@ -78,9 +78,9 @@ class Crawler(threading.Thread):
                                 self.detect_404_pages(loc.text, depth + 1, log404, log200, None)
                     
                 except Exception as e:
-                    print(f"Error: {e}, {url}")
+                    print(f"Error: {url}")
         except Exception as e:
-            print(f"Error: {e}, {url}")
+            print(f"Error: {url}")
 
 def crawlPages(link, depth, filter):
     global shutdown_event
